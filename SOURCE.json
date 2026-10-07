@@ -1,0 +1,15 @@
+{
+  "source_commit": "2386d21196ebaac44138a302d80102899dcb6e10",
+  "source_tree": "0a9220586d5b1c1db554ead321ea4394737ddb50",
+  "source_base": "a0869c88f3a053f5f65c8e2ee34d63ba74ce6942",
+  "original_artifact": "f6cf156dc204ff8a12c02bde9794080b9296e17d",
+  "artifact_manifest_sha256": "e91db64228b7b3a0a94c63cb45c885fb3e49fa6d809030baa3844ffff1beb8e7",
+  "artifact_files": 786,
+  "artifact_bytes": 111545280,
+  "artifact_path": "/tmp/cip160-formal/dist/hs",
+  "extractor": "/nix/store/yqqq670pzxr89p455zpl3gj6asz0kjmb-fls-shake-0.0.0.1/bin/fls-shake hs",
+  "agda_version": "2.8.0",
+  "hpack_version": "0.38.3",
+  "status": "real extraction and full source typecheck passed; executable harness and ledger conformance pending",
+  "generated_code_modified": false
+}

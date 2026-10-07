@@ -49,21 +49,21 @@ d_Slot_84 ::
   ()
 d_Slot_84 = erased
 -- Ledger.Dijkstra.Specification.Script.Native._
-d___112 ::
+d___114 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10
-d___112 ~v0 ~v1 ~v2 v3 = du___112 v3
-du___112 ::
+d___114 ~v0 ~v1 ~v2 v3 = du___114 v3
+du___114 ::
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10
-du___112 v0 = coe v0
+du___114 v0 = coe v0
 -- Ledger.Dijkstra.Specification.Script.Native._.Credential
-d_Credential_130 a0 a1 a2 a3 a4 a5 a6 = ()
+d_Credential_132 a0 a1 a2 a3 a4 a5 a6 = ()
 -- Ledger.Dijkstra.Specification.Script.Native._.DecEq-Credential
-d_DecEq'45'Credential_142 ::
+d_DecEq'45'Credential_144 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -72,55 +72,55 @@ d_DecEq'45'Credential_142 ::
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10
-d_DecEq'45'Credential_142 ~v0 ~v1 ~v2 ~v3 ~v4 v5 v6
-  = du_DecEq'45'Credential_142 v5 v6
-du_DecEq'45'Credential_142 ::
+d_DecEq'45'Credential_144 ~v0 ~v1 ~v2 ~v3 ~v4 v5 v6
+  = du_DecEq'45'Credential_144 v5 v6
+du_DecEq'45'Credential_144 ::
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10
-du_DecEq'45'Credential_142 v0 v1
+du_DecEq'45'Credential_144 v0 v1
   = coe
       MAlonzo.Code.Ledger.Core.Specification.Address.du_DecEq'45'Credential_316
       (coe v0) (coe v1)
 -- Ledger.Dijkstra.Specification.Script.Native.NativeScript
-d_NativeScript_336 a0 a1 a2 a3 = ()
-data T_NativeScript_336
-  = C_RequireAllOf_338 [T_NativeScript_336] |
-    C_RequireAnyOf_340 [T_NativeScript_336] |
-    C_RequireMOf_342 Integer [T_NativeScript_336] |
-    C_RequireSig_344 AgdaAny | C_RequireTimeStart_346 AgdaAny |
-    C_RequireTimeExpire_348 AgdaAny |
-    C_RequireGuard_350 MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20
+d_NativeScript_338 a0 a1 a2 a3 = ()
+data T_NativeScript_338
+  = C_RequireAllOf_340 [T_NativeScript_338] |
+    C_RequireAnyOf_342 [T_NativeScript_338] |
+    C_RequireMOf_344 Integer [T_NativeScript_338] |
+    C_RequireSig_346 AgdaAny | C_RequireTimeStart_348 AgdaAny |
+    C_RequireTimeExpire_350 AgdaAny |
+    C_RequireGuard_352 MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20
 -- Ledger.Dijkstra.Specification.Script.Native.DecEq-NativeScript
-d_DecEq'45'NativeScript_352 ::
+d_DecEq'45'NativeScript_354 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10
-d_DecEq'45'NativeScript_352 v0 v1 ~v2 v3
-  = du_DecEq'45'NativeScript_352 v0 v1 v3
-du_DecEq'45'NativeScript_352 ::
+d_DecEq'45'NativeScript_354 v0 v1 ~v2 v3
+  = du_DecEq'45'NativeScript_354 v0 v1 v3
+du_DecEq'45'NativeScript_354 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10
-du_DecEq'45'NativeScript_352 v0 v1 v2
+du_DecEq'45'NativeScript_354 v0 v1 v2
   = coe
       MAlonzo.Code.Class.DecEq.Core.C_constructor_32
       (coe
          (\ v3 ->
             case coe v3 of
-              C_RequireAllOf_338 v4
+              C_RequireAllOf_340 v4
                 -> coe
                      (\ v5 ->
                         case coe v5 of
-                          C_RequireAllOf_338 v6
+                          C_RequireAllOf_340 v6
                             -> let v7
                                      = coe
                                          MAlonzo.Code.Class.DecEq.Core.d__'8799'__16
                                          (coe
-                                            du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2957
+                                            du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2961
                                             (coe v0) (coe v1) (coe v2))
                                          v4 v6 in
                                coe
@@ -139,52 +139,52 @@ du_DecEq'45'NativeScript_352 v0 v1 v2
                                                   (coe
                                                      MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                                     _ -> MAlonzo.RTE.mazUnreachableError)
-                          C_RequireAnyOf_340 v6
+                          C_RequireAnyOf_342 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireMOf_342 v6 v7
+                          C_RequireMOf_344 v6 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireSig_344 v6
+                          C_RequireSig_346 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeStart_346 v6
+                          C_RequireTimeStart_348 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeExpire_348 v6
+                          C_RequireTimeExpire_350 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireGuard_350 v6
+                          C_RequireGuard_352 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                           _ -> MAlonzo.RTE.mazUnreachableError)
-              C_RequireAnyOf_340 v4
+              C_RequireAnyOf_342 v4
                 -> coe
                      (\ v5 ->
                         case coe v5 of
-                          C_RequireAllOf_338 v6
+                          C_RequireAllOf_340 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireAnyOf_340 v6
+                          C_RequireAnyOf_342 v6
                             -> let v7
                                      = coe
                                          MAlonzo.Code.Class.DecEq.Core.d__'8799'__16
                                          (coe
-                                            du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2957
+                                            du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2961
                                             (coe v0) (coe v1) (coe v2))
                                          v4 v6 in
                                coe
@@ -203,94 +203,94 @@ du_DecEq'45'NativeScript_352 v0 v1 v2
                                                   (coe
                                                      MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                                     _ -> MAlonzo.RTE.mazUnreachableError)
-                          C_RequireMOf_342 v6 v7
+                          C_RequireMOf_344 v6 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireSig_344 v6
+                          C_RequireSig_346 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeStart_346 v6
+                          C_RequireTimeStart_348 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeExpire_348 v6
+                          C_RequireTimeExpire_350 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireGuard_350 v6
+                          C_RequireGuard_352 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                           _ -> MAlonzo.RTE.mazUnreachableError)
-              C_RequireMOf_342 v4 v5
+              C_RequireMOf_344 v4 v5
                 -> coe
                      (\ v6 ->
                         case coe v6 of
-                          C_RequireAllOf_338 v7
+                          C_RequireAllOf_340 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireAnyOf_340 v7
+                          C_RequireAnyOf_342 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireMOf_342 v7 v8
+                          C_RequireMOf_344 v7 v8
                             -> coe
-                                 du_'46'extendedlambda_2809 (coe v0) (coe v1) (coe v2) (coe v5)
+                                 du_'46'extendedlambda_2813 (coe v0) (coe v1) (coe v2) (coe v5)
                                  (coe v8)
                                  (coe
                                     MAlonzo.Code.Data.Nat.Properties.d__'8799'__2796 (coe v4)
                                     (coe v7))
-                          C_RequireSig_344 v7
+                          C_RequireSig_346 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeStart_346 v7
+                          C_RequireTimeStart_348 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeExpire_348 v7
+                          C_RequireTimeExpire_350 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireGuard_350 v7
+                          C_RequireGuard_352 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                           _ -> MAlonzo.RTE.mazUnreachableError)
-              C_RequireSig_344 v4
+              C_RequireSig_346 v4
                 -> coe
                      (\ v5 ->
                         case coe v5 of
-                          C_RequireAllOf_338 v6
+                          C_RequireAllOf_340 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireAnyOf_340 v6
+                          C_RequireAnyOf_342 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireMOf_342 v6 v7
+                          C_RequireMOf_344 v6 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireSig_344 v6
+                          C_RequireSig_346 v6
                             -> let v7
                                      = coe
                                          MAlonzo.Code.Class.DecEq.Core.d__'8799'__16
@@ -315,51 +315,51 @@ du_DecEq'45'NativeScript_352 v0 v1 v2
                                                   (coe
                                                      MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                                     _ -> MAlonzo.RTE.mazUnreachableError)
-                          C_RequireTimeStart_346 v6
+                          C_RequireTimeStart_348 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeExpire_348 v6
+                          C_RequireTimeExpire_350 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireGuard_350 v6
+                          C_RequireGuard_352 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                           _ -> MAlonzo.RTE.mazUnreachableError)
-              C_RequireTimeStart_346 v4
+              C_RequireTimeStart_348 v4
                 -> coe
                      (\ v5 ->
                         case coe v5 of
-                          C_RequireAllOf_338 v6
+                          C_RequireAllOf_340 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireAnyOf_340 v6
+                          C_RequireAnyOf_342 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireMOf_342 v6 v7
+                          C_RequireMOf_344 v6 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireSig_344 v6
+                          C_RequireSig_346 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeStart_346 v6
+                          C_RequireTimeStart_348 v6
                             -> let v7
                                      = coe
                                          MAlonzo.Code.Class.DecEq.Core.d__'8799'__16
-                                         (MAlonzo.Code.Ledger.Core.Specification.Epoch.d_DecEq'45'Slot_88
+                                         (MAlonzo.Code.Ledger.Core.Specification.Epoch.d_DecEq'45'Slot_90
                                             (coe v1))
                                          v4 v6 in
                                coe
@@ -378,51 +378,51 @@ du_DecEq'45'NativeScript_352 v0 v1 v2
                                                   (coe
                                                      MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                                     _ -> MAlonzo.RTE.mazUnreachableError)
-                          C_RequireTimeExpire_348 v6
+                          C_RequireTimeExpire_350 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireGuard_350 v6
+                          C_RequireGuard_352 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                           _ -> MAlonzo.RTE.mazUnreachableError)
-              C_RequireTimeExpire_348 v4
+              C_RequireTimeExpire_350 v4
                 -> coe
                      (\ v5 ->
                         case coe v5 of
-                          C_RequireAllOf_338 v6
+                          C_RequireAllOf_340 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireAnyOf_340 v6
+                          C_RequireAnyOf_342 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireMOf_342 v6 v7
+                          C_RequireMOf_344 v6 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireSig_344 v6
+                          C_RequireSig_346 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeStart_346 v6
+                          C_RequireTimeStart_348 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeExpire_348 v6
+                          C_RequireTimeExpire_350 v6
                             -> let v7
                                      = coe
                                          MAlonzo.Code.Class.DecEq.Core.d__'8799'__16
-                                         (MAlonzo.Code.Ledger.Core.Specification.Epoch.d_DecEq'45'Slot_88
+                                         (MAlonzo.Code.Ledger.Core.Specification.Epoch.d_DecEq'45'Slot_90
                                             (coe v1))
                                          v4 v6 in
                                coe
@@ -441,47 +441,47 @@ du_DecEq'45'NativeScript_352 v0 v1 v2
                                                   (coe
                                                      MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                                     _ -> MAlonzo.RTE.mazUnreachableError)
-                          C_RequireGuard_350 v6
+                          C_RequireGuard_352 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                           _ -> MAlonzo.RTE.mazUnreachableError)
-              C_RequireGuard_350 v4
+              C_RequireGuard_352 v4
                 -> coe
                      (\ v5 ->
                         case coe v5 of
-                          C_RequireAllOf_338 v6
+                          C_RequireAllOf_340 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireAnyOf_340 v6
+                          C_RequireAnyOf_342 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireMOf_342 v6 v7
+                          C_RequireMOf_344 v6 v7
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireSig_344 v6
+                          C_RequireSig_346 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeStart_346 v6
+                          C_RequireTimeStart_348 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireTimeExpire_348 v6
+                          C_RequireTimeExpire_350 v6
                             -> coe
                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
                                  (coe MAlonzo.Code.Agda.Builtin.Bool.C_false_8)
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
-                          C_RequireGuard_350 v6
+                          C_RequireGuard_352 v6
                             -> let v7
                                      = coe
                                          MAlonzo.Code.Class.DecEq.Core.d__'8799'__16
@@ -515,17 +515,17 @@ du_DecEq'45'NativeScript_352 v0 v1 v2
                           _ -> MAlonzo.RTE.mazUnreachableError)
               _ -> MAlonzo.RTE.mazUnreachableError))
 -- Ledger.Dijkstra.Specification.Script.Native.EvalNativeScript
-d_EvalNativeScript_378 a0 a1 a2 a3 a4 a5 a6 a7 = ()
-data T_EvalNativeScript_378
-  = C_evalAll_386 MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44 |
-    C_evalAny_388 MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34 |
-    C_evalMOf_390 MAlonzo.Code.Qstdlib.Data.List.Relation.Unary.MOf.T_MOf_24 |
-    C_evalSig_392 MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34 |
-    C_evalTSt_396 MAlonzo.Code.Data.Maybe.Relation.Unary.Any.T_Any_18 |
-    C_evalTEx_400 MAlonzo.Code.Data.Maybe.Relation.Unary.Any.T_Any_18 |
-    C_evalGuard_402 MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
+d_EvalNativeScript_380 a0 a1 a2 a3 a4 a5 a6 a7 = ()
+data T_EvalNativeScript_380
+  = C_evalAll_388 MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44 |
+    C_evalAny_390 MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34 |
+    C_evalMOf_392 MAlonzo.Code.Qstdlib.Data.List.Relation.Unary.MOf.T_MOf_24 |
+    C_evalSig_394 MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34 |
+    C_evalTSt_398 MAlonzo.Code.Data.Maybe.Relation.Unary.Any.T_Any_18 |
+    C_evalTEx_402 MAlonzo.Code.Data.Maybe.Relation.Unary.Any.T_Any_18 |
+    C_evalGuard_404 MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
 -- Ledger.Dijkstra.Specification.Script.Native.Dec-EvalNativeScript
-d_Dec'45'EvalNativeScript_406 ::
+d_Dec'45'EvalNativeScript_408 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -533,25 +533,25 @@ d_Dec'45'EvalNativeScript_406 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   MAlonzo.Code.Class.Decidable.Core.T__'8263'_10
-d_Dec'45'EvalNativeScript_406 v0 v1 ~v2 v3 v4 v5 v6 v7
-  = du_Dec'45'EvalNativeScript_406 v0 v1 v3 v4 v5 v6 v7
-du_Dec'45'EvalNativeScript_406 ::
+d_Dec'45'EvalNativeScript_408 v0 v1 ~v2 v3 v4 v5 v6 v7
+  = du_Dec'45'EvalNativeScript_408 v0 v1 v3 v4 v5 v6 v7
+du_Dec'45'EvalNativeScript_408 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   MAlonzo.Code.Class.Decidable.Core.T__'8263'_10
-du_Dec'45'EvalNativeScript_406 v0 v1 v2 v3 v4 v5 v6
+du_Dec'45'EvalNativeScript_408 v0 v1 v2 v3 v4 v5 v6
   = coe
       MAlonzo.Code.Class.Decidable.Core.C_'8263'__30
-      (coe du_go'63'_458 v0 v1 v2 v3 v4 v5 v6 v6)
+      (coe du_go'63'_460 v0 v1 v2 v3 v4 v5 v6 v6)
 -- Ledger.Dijkstra.Specification.Script.Native._.go
-d_go_420 ::
+d_go_422 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -559,10 +559,10 @@ d_go_420 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 -> T_NativeScript_336 -> ()
-d_go_420 = erased
+  T_NativeScript_338 -> T_NativeScript_338 -> ()
+d_go_422 = erased
 -- Ledger.Dijkstra.Specification.Script.Native._.evalAll˘
-d_evalAll'728'_424 ::
+d_evalAll'728'_426 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -570,21 +570,21 @@ d_evalAll'728'_424 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
-  T_EvalNativeScript_378 ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44
-d_evalAll'728'_424 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
-  = du_evalAll'728'_424 v9
-du_evalAll'728'_424 ::
-  T_EvalNativeScript_378 ->
+d_evalAll'728'_426 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
+  = du_evalAll'728'_426 v9
+du_evalAll'728'_426 ::
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44
-du_evalAll'728'_424 v0
+du_evalAll'728'_426 v0
   = case coe v0 of
-      C_evalAll_386 v2 -> coe v2
+      C_evalAll_388 v2 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._.evalAny˘
-d_evalAny'728'_428 ::
+d_evalAny'728'_430 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -592,21 +592,21 @@ d_evalAny'728'_428 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
-  T_EvalNativeScript_378 ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
-d_evalAny'728'_428 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
-  = du_evalAny'728'_428 v9
-du_evalAny'728'_428 ::
-  T_EvalNativeScript_378 ->
+d_evalAny'728'_430 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
+  = du_evalAny'728'_430 v9
+du_evalAny'728'_430 ::
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
-du_evalAny'728'_428 v0
+du_evalAny'728'_430 v0
   = case coe v0 of
-      C_evalAny_388 v2 -> coe v2
+      C_evalAny_390 v2 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._.evalTSt˘
-d_evalTSt'728'_432 ::
+d_evalTSt'728'_434 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -614,21 +614,21 @@ d_evalTSt'728'_432 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   AgdaAny ->
-  T_EvalNativeScript_378 ->
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.Maybe.Relation.Unary.Any.T_Any_18
-d_evalTSt'728'_432 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
-  = du_evalTSt'728'_432 v9
-du_evalTSt'728'_432 ::
-  T_EvalNativeScript_378 ->
+d_evalTSt'728'_434 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
+  = du_evalTSt'728'_434 v9
+du_evalTSt'728'_434 ::
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.Maybe.Relation.Unary.Any.T_Any_18
-du_evalTSt'728'_432 v0
+du_evalTSt'728'_434 v0
   = case coe v0 of
-      C_evalTSt_396 v2 -> coe v2
+      C_evalTSt_398 v2 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._.evalTEx˘
-d_evalTEx'728'_436 ::
+d_evalTEx'728'_438 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -636,21 +636,21 @@ d_evalTEx'728'_436 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   AgdaAny ->
-  T_EvalNativeScript_378 ->
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.Maybe.Relation.Unary.Any.T_Any_18
-d_evalTEx'728'_436 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
-  = du_evalTEx'728'_436 v9
-du_evalTEx'728'_436 ::
-  T_EvalNativeScript_378 ->
+d_evalTEx'728'_438 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
+  = du_evalTEx'728'_438 v9
+du_evalTEx'728'_438 ::
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.Maybe.Relation.Unary.Any.T_Any_18
-du_evalTEx'728'_436 v0
+du_evalTEx'728'_438 v0
   = case coe v0 of
-      C_evalTEx_400 v2 -> coe v2
+      C_evalTEx_402 v2 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._.evalSig˘
-d_evalSig'728'_438 ::
+d_evalSig'728'_440 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -658,21 +658,21 @@ d_evalSig'728'_438 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   AgdaAny ->
-  T_EvalNativeScript_378 ->
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
-d_evalSig'728'_438 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
-  = du_evalSig'728'_438 v9
-du_evalSig'728'_438 ::
-  T_EvalNativeScript_378 ->
+d_evalSig'728'_440 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
+  = du_evalSig'728'_440 v9
+du_evalSig'728'_440 ::
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
-du_evalSig'728'_438 v0
+du_evalSig'728'_440 v0
   = case coe v0 of
-      C_evalSig_392 v2 -> coe v2
+      C_evalSig_394 v2 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._.evalGuard˘
-d_evalGuard'728'_440 ::
+d_evalGuard'728'_442 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -680,21 +680,21 @@ d_evalGuard'728'_440 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20 ->
-  T_EvalNativeScript_378 ->
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
-d_evalGuard'728'_440 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
-  = du_evalGuard'728'_440 v9
-du_evalGuard'728'_440 ::
-  T_EvalNativeScript_378 ->
+d_evalGuard'728'_442 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 v9
+  = du_evalGuard'728'_442 v9
+du_evalGuard'728'_442 ::
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
-du_evalGuard'728'_440 v0
+du_evalGuard'728'_442 v0
   = case coe v0 of
-      C_evalGuard_402 v2 -> coe v2
+      C_evalGuard_404 v2 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._.evalMOf˘
-d_evalMOf'728'_446 ::
+d_evalMOf'728'_448 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -702,22 +702,22 @@ d_evalMOf'728'_446 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   Integer ->
-  [T_NativeScript_336] ->
-  T_EvalNativeScript_378 ->
+  [T_NativeScript_338] ->
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Qstdlib.Data.List.Relation.Unary.MOf.T_MOf_24
-d_evalMOf'728'_446 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 ~v9 v10
-  = du_evalMOf'728'_446 v10
-du_evalMOf'728'_446 ::
-  T_EvalNativeScript_378 ->
+d_evalMOf'728'_448 ~v0 ~v1 ~v2 ~v3 ~v4 ~v5 ~v6 ~v7 ~v8 ~v9 v10
+  = du_evalMOf'728'_448 v10
+du_evalMOf'728'_448 ::
+  T_EvalNativeScript_380 ->
   MAlonzo.Code.Qstdlib.Data.List.Relation.Unary.MOf.T_MOf_24
-du_evalMOf'728'_446 v0
+du_evalMOf'728'_448 v0
   = case coe v0 of
-      C_evalMOf_390 v3 -> coe v3
+      C_evalMOf_392 v3 -> coe v3
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._.MOf-go?
-d_MOf'45'go'63'_452 ::
+d_MOf'45'go'63'_454 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -725,24 +725,24 @@ d_MOf'45'go'63'_452 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   Integer ->
-  [T_NativeScript_336] ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-d_MOf'45'go'63'_452 v0 v1 ~v2 v3 v4 v5 v6 v7 v8 v9
-  = du_MOf'45'go'63'_452 v0 v1 v3 v4 v5 v6 v7 v8 v9
-du_MOf'45'go'63'_452 ::
+d_MOf'45'go'63'_454 v0 v1 ~v2 v3 v4 v5 v6 v7 v8 v9
+  = du_MOf'45'go'63'_454 v0 v1 v3 v4 v5 v6 v7 v8 v9
+du_MOf'45'go'63'_454 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   Integer ->
-  [T_NativeScript_336] ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-du_MOf'45'go'63'_452 v0 v1 v2 v3 v4 v5 v6 v7 v8
+du_MOf'45'go'63'_454 v0 v1 v2 v3 v4 v5 v6 v7 v8
   = case coe v7 of
       0 -> coe
              MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32
@@ -762,12 +762,12 @@ du_MOf'45'go'63'_452 v0 v1 v2 v3 v4 v5 v6 v7 v8
                        (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                 (:) v10 v11
                   -> coe
-                       du_'46'extendedlambda_125729 (coe v0) (coe v1) (coe v2) (coe v3)
+                       du_'46'extendedlambda_125733 (coe v0) (coe v1) (coe v2) (coe v3)
                        (coe v4) (coe v5) (coe v6) (coe v9) (coe v10) (coe v11)
-                       (coe du_go'63'_458 v0 v1 v2 v3 v4 v5 v6 v10)
+                       (coe du_go'63'_460 v0 v1 v2 v3 v4 v5 v6 v10)
                 _ -> MAlonzo.RTE.mazUnreachableError)
 -- Ledger.Dijkstra.Specification.Script.Native._.all-go?
-d_all'45'go'63'_454 ::
+d_all'45'go'63'_456 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -775,22 +775,22 @@ d_all'45'go'63'_454 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-d_all'45'go'63'_454 v0 v1 ~v2 v3 v4 v5 v6 v7 v8
-  = du_all'45'go'63'_454 v0 v1 v3 v4 v5 v6 v7 v8
-du_all'45'go'63'_454 ::
+d_all'45'go'63'_456 v0 v1 ~v2 v3 v4 v5 v6 v7 v8
+  = du_all'45'go'63'_456 v0 v1 v3 v4 v5 v6 v7 v8
+du_all'45'go'63'_456 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-du_all'45'go'63'_454 v0 v1 v2 v3 v4 v5 v6 v7
+du_all'45'go'63'_456 v0 v1 v2 v3 v4 v5 v6 v7
   = case coe v7 of
       []
         -> coe
@@ -808,13 +808,13 @@ du_all'45'go'63'_454 v0 v1 v2 v3 v4 v5 v6 v7
              (coe MAlonzo.Code.Data.List.Relation.Unary.All.du_uncons_108)
              (coe
                 MAlonzo.Code.Relation.Nullary.Decidable.Core.du__'215''45'dec__84
-                (coe du_go'63'_458 v0 v1 v2 v3 v4 v5 v6 v8)
+                (coe du_go'63'_460 v0 v1 v2 v3 v4 v5 v6 v8)
                 (coe
-                   du_all'45'go'63'_454 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
+                   du_all'45'go'63'_456 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
                    (coe v5) (coe v6) (coe v9)))
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._.any-go?
-d_any'45'go'63'_456 ::
+d_any'45'go'63'_458 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -822,22 +822,22 @@ d_any'45'go'63'_456 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-d_any'45'go'63'_456 v0 v1 ~v2 v3 v4 v5 v6 v7 v8
-  = du_any'45'go'63'_456 v0 v1 v3 v4 v5 v6 v7 v8
-du_any'45'go'63'_456 ::
+d_any'45'go'63'_458 v0 v1 ~v2 v3 v4 v5 v6 v7 v8
+  = du_any'45'go'63'_458 v0 v1 v3 v4 v5 v6 v7 v8
+du_any'45'go'63'_458 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-du_any'45'go'63'_456 v0 v1 v2 v3 v4 v5 v6 v7
+du_any'45'go'63'_458 v0 v1 v2 v3 v4 v5 v6 v7
   = case coe v7 of
       []
         -> coe
@@ -851,13 +851,13 @@ du_any'45'go'63'_456 v0 v1 v2 v3 v4 v5 v6 v7
              (coe MAlonzo.Code.Data.List.Relation.Unary.Any.du_toSum_126)
              (coe
                 MAlonzo.Code.Relation.Nullary.Decidable.Core.du__'8846''45'dec__96
-                (coe du_go'63'_458 v0 v1 v2 v3 v4 v5 v6 v8)
+                (coe du_go'63'_460 v0 v1 v2 v3 v4 v5 v6 v8)
                 (coe
-                   du_any'45'go'63'_456 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
+                   du_any'45'go'63'_458 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
                    (coe v5) (coe v6) (coe v9)))
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._.go?
-d_go'63'_458 ::
+d_go'63'_460 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -865,27 +865,27 @@ d_go'63'_458 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
+  T_NativeScript_338 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-d_go'63'_458 v0 v1 ~v2 v3 v4 v5 v6 v7
-  = du_go'63'_458 v0 v1 v3 v4 v5 v6 v7
-du_go'63'_458 ::
+d_go'63'_460 v0 v1 ~v2 v3 v4 v5 v6 v7
+  = du_go'63'_460 v0 v1 v3 v4 v5 v6 v7
+du_go'63'_460 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
+  T_NativeScript_338 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-du_go'63'_458 v0 v1 v2 v3 v4 v5 v6
+du_go'63'_460 v0 v1 v2 v3 v4 v5 v6
   = coe
-      du_'46'extendedlambda0_474 (coe v0) (coe v1) (coe v2) (coe v3)
+      du_'46'extendedlambda0_476 (coe v0) (coe v1) (coe v2) (coe v3)
       (coe v4) (coe v5) (coe v6)
 -- Ledger.Dijkstra.Specification.Script.Native._..extendedlambda0
-d_'46'extendedlambda0_474 ::
+d_'46'extendedlambda0_476 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -893,48 +893,48 @@ d_'46'extendedlambda0_474 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
+  T_NativeScript_338 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-d_'46'extendedlambda0_474 v0 v1 ~v2 v3 v4 v5 v6 v7 v8
-  = du_'46'extendedlambda0_474 v0 v1 v3 v4 v5 v6 v7 v8
-du_'46'extendedlambda0_474 ::
+d_'46'extendedlambda0_476 v0 v1 ~v2 v3 v4 v5 v6 v7 v8
+  = du_'46'extendedlambda0_476 v0 v1 v3 v4 v5 v6 v7 v8
+du_'46'extendedlambda0_476 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
+  T_NativeScript_338 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-du_'46'extendedlambda0_474 v0 v1 v2 v3 v4 v5 v6 v7
+du_'46'extendedlambda0_476 v0 v1 v2 v3 v4 v5 v6 v7
   = case coe v7 of
-      C_RequireAllOf_338 v8
+      C_RequireAllOf_340 v8
         -> coe
              MAlonzo.Code.Relation.Nullary.Decidable.Core.du_map'8242'_178
-             (coe C_evalAll_386) (coe du_evalAll'728'_424)
+             (coe C_evalAll_388) (coe du_evalAll'728'_426)
              (coe
-                du_all'45'go'63'_454 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
+                du_all'45'go'63'_456 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
                 (coe v5) (coe v6) (coe v8))
-      C_RequireAnyOf_340 v8
+      C_RequireAnyOf_342 v8
         -> coe
              MAlonzo.Code.Relation.Nullary.Decidable.Core.du_map'8242'_178
-             (coe C_evalAny_388) (coe du_evalAny'728'_428)
+             (coe C_evalAny_390) (coe du_evalAny'728'_430)
              (coe
-                du_any'45'go'63'_456 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
+                du_any'45'go'63'_458 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
                 (coe v5) (coe v6) (coe v8))
-      C_RequireMOf_342 v8 v9
+      C_RequireMOf_344 v8 v9
         -> coe
              MAlonzo.Code.Relation.Nullary.Decidable.Core.du_map'8242'_178
-             (coe C_evalMOf_390) (coe du_evalMOf'728'_446)
+             (coe C_evalMOf_392) (coe du_evalMOf'728'_448)
              (coe
-                du_MOf'45'go'63'_452 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
+                du_MOf'45'go'63'_454 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
                 (coe v5) (coe v6) (coe v8) (coe v9))
-      C_RequireSig_344 v8
+      C_RequireSig_346 v8
         -> coe
              MAlonzo.Code.Relation.Nullary.Decidable.Core.du_map'8242'_178
-             (coe C_evalSig_392) (coe du_evalSig'728'_438)
+             (coe C_evalSig_394) (coe du_evalSig'728'_440)
              (coe
                 MAlonzo.Code.Class.Decidable.Core.d_dec_16
                 (coe
@@ -950,10 +950,10 @@ du_'46'extendedlambda0_474 v0 v1 v2 v3 v4 v5 v6 v7
                    (coe
                       MAlonzo.Code.Class.IsSet.d_toSet_526
                       (coe MAlonzo.Code.Class.IsSet.du_IsSet'45'Set_590) v3)))
-      C_RequireTimeStart_346 v8
+      C_RequireTimeStart_348 v8
         -> coe
              MAlonzo.Code.Relation.Nullary.Decidable.Core.du_map'8242'_178
-             (coe C_evalTSt_396) (coe du_evalTSt'728'_432)
+             (coe C_evalTSt_398) (coe du_evalTSt'728'_434)
              (coe
                 MAlonzo.Code.Class.Decidable.Core.d_dec_16
                 (coe
@@ -964,14 +964,14 @@ du_'46'extendedlambda0_474 v0 v1 v2 v3 v4 v5 v6 v7
                          MAlonzo.Code.Class.Decidable.Core.du_dec'185'_72
                          (coe
                             MAlonzo.Code.Class.HasOrder.Core.d_dec'45''8804'_272
-                            (MAlonzo.Code.Ledger.Core.Specification.Epoch.d_DecPo'45'Slot_86
+                            (MAlonzo.Code.Ledger.Core.Specification.Epoch.d_DecPo'45'Slot_88
                                (coe v1))
                             v8)))
                    (coe MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28 (coe v5))))
-      C_RequireTimeExpire_348 v8
+      C_RequireTimeExpire_350 v8
         -> coe
              MAlonzo.Code.Relation.Nullary.Decidable.Core.du_map'8242'_178
-             (coe C_evalTEx_400) (coe du_evalTEx'728'_436)
+             (coe C_evalTEx_402) (coe du_evalTEx'728'_438)
              (coe
                 MAlonzo.Code.Class.Decidable.Core.d_dec_16
                 (coe
@@ -984,14 +984,14 @@ du_'46'extendedlambda0_474 v0 v1 v2 v3 v4 v5 v6 v7
                             (\ v9 ->
                                coe
                                  MAlonzo.Code.Class.HasOrder.Core.d_dec'45''8804'_272
-                                 (MAlonzo.Code.Ledger.Core.Specification.Epoch.d_DecPo'45'Slot_86
+                                 (MAlonzo.Code.Ledger.Core.Specification.Epoch.d_DecPo'45'Slot_88
                                     (coe v1))
                                  v9 v8))))
                    (coe MAlonzo.Code.Agda.Builtin.Sigma.d_snd_30 (coe v5))))
-      C_RequireGuard_350 v8
+      C_RequireGuard_352 v8
         -> coe
              MAlonzo.Code.Relation.Nullary.Decidable.Core.du_map'8242'_178
-             (coe C_evalGuard_402) (coe du_evalGuard'728'_440)
+             (coe C_evalGuard_404) (coe du_evalGuard'728'_442)
              (coe
                 MAlonzo.Code.Class.Decidable.Core.d_dec_16
                 (coe
@@ -1019,28 +1019,28 @@ du_'46'extendedlambda0_474 v0 v1 v2 v3 v4 v5 v6 v7
                       (coe MAlonzo.Code.Class.IsSet.du_IsSet'45'Set_590) v4)))
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native..extendedlambda
-d_'46'extendedlambda_2809 ::
+d_'46'extendedlambda_2813 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   Integer ->
-  [T_NativeScript_336] ->
+  [T_NativeScript_338] ->
   Integer ->
-  [T_NativeScript_336] ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-d_'46'extendedlambda_2809 v0 v1 ~v2 v3 ~v4 v5 ~v6 v7 v8
-  = du_'46'extendedlambda_2809 v0 v1 v3 v5 v7 v8
-du_'46'extendedlambda_2809 ::
+d_'46'extendedlambda_2813 v0 v1 ~v2 v3 ~v4 v5 ~v6 v7 v8
+  = du_'46'extendedlambda_2813 v0 v1 v3 v5 v7 v8
+du_'46'extendedlambda_2813 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
-  [T_NativeScript_336] ->
-  [T_NativeScript_336] ->
+  [T_NativeScript_338] ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-du_'46'extendedlambda_2809 v0 v1 v2 v3 v4 v5
+du_'46'extendedlambda_2813 v0 v1 v2 v3 v4 v5
   = case coe v5 of
       MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v6 v7
         -> if coe v6
@@ -1048,7 +1048,7 @@ du_'46'extendedlambda_2809 v0 v1 v2 v3 v4 v5
                         = coe
                             MAlonzo.Code.Class.DecEq.Core.d__'8799'__16
                             (coe
-                               du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2957
+                               du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2961
                                (coe v0) (coe v1) (coe v2))
                             v3 v4 in
                   coe
@@ -1070,24 +1070,24 @@ du_'46'extendedlambda_2809 v0 v1 v2 v3 v4 v5
                     (coe v6) (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native.Class.DecEq.Core.DecEq-Agda.Builtin.List.ListLedger.Dijkstra.Specification.Script.Native.NativeScript
-d_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2957 ::
+d_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2961 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10
-d_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2957 v0
+d_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2961 v0
                                                                                                                                                  v1
                                                                                                                                                  ~v2
                                                                                                                                                  v3
-  = du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2957
+  = du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2961
       v0 v1 v3
-du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2957 ::
+du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2961 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10
-du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2957 v0
+du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2961 v0
                                                                                                                                                   v1
                                                                                                                                                   v2
   = coe
@@ -1121,37 +1121,37 @@ du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'D
                                  (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
                           (:) v7 v8
                             -> coe
-                                 du_'46'extendedlambda_72175 (coe v0) (coe v1) (coe v2) (coe v5)
+                                 du_'46'extendedlambda_72179 (coe v0) (coe v1) (coe v2) (coe v5)
                                  (coe v8)
                                  (coe
                                     MAlonzo.Code.Class.DecEq.Core.d__'8799'__16
-                                    (coe du_DecEq'45'NativeScript_352 (coe v0) (coe v1) (coe v2)) v4
+                                    (coe du_DecEq'45'NativeScript_354 (coe v0) (coe v1) (coe v2)) v4
                                     v7)
                           _ -> MAlonzo.RTE.mazUnreachableError)
               _ -> MAlonzo.RTE.mazUnreachableError))
 -- Ledger.Dijkstra.Specification.Script.Native..extendedlambda
-d_'46'extendedlambda_72175 ::
+d_'46'extendedlambda_72179 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-d_'46'extendedlambda_72175 v0 v1 ~v2 v3 ~v4 v5 ~v6 v7 v8
-  = du_'46'extendedlambda_72175 v0 v1 v3 v5 v7 v8
-du_'46'extendedlambda_72175 ::
+d_'46'extendedlambda_72179 v0 v1 ~v2 v3 ~v4 v5 ~v6 v7 v8
+  = du_'46'extendedlambda_72179 v0 v1 v3 v5 v7 v8
+du_'46'extendedlambda_72179 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
-  [T_NativeScript_336] ->
-  [T_NativeScript_336] ->
+  [T_NativeScript_338] ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-du_'46'extendedlambda_72175 v0 v1 v2 v3 v4 v5
+du_'46'extendedlambda_72179 v0 v1 v2 v3 v4 v5
   = case coe v5 of
       MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v6 v7
         -> if coe v6
@@ -1159,7 +1159,7 @@ du_'46'extendedlambda_72175 v0 v1 v2 v3 v4 v5
                         = coe
                             MAlonzo.Code.Class.DecEq.Core.d__'8799'__16
                             (coe
-                               du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2957
+                               du_Class'46'DecEq'46'Core'46'DecEq'45'Agda'46'Builtin'46'List'46'ListLedger'46'Dijkstra'46'Specification'46'Script'46'Native'46'NativeScript_2961
                                (coe v0) (coe v1) (coe v2))
                             v3 v4 in
                   coe
@@ -1181,7 +1181,7 @@ du_'46'extendedlambda_72175 v0 v1 v2 v3 v4 v5
                     (coe v6) (coe MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26)
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Script.Native._..extendedlambda
-d_'46'extendedlambda_125729 ::
+d_'46'extendedlambda_125733 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   () ->
@@ -1189,28 +1189,28 @@ d_'46'extendedlambda_125729 ::
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   Integer ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-d_'46'extendedlambda_125729 v0 v1 ~v2 v3 v4 v5 v6 v7 v8 v9 v10 v11
-  = du_'46'extendedlambda_125729 v0 v1 v3 v4 v5 v6 v7 v8 v9 v10 v11
-du_'46'extendedlambda_125729 ::
+d_'46'extendedlambda_125733 v0 v1 ~v2 v3 v4 v5 v6 v7 v8 v9 v10 v11
+  = du_'46'extendedlambda_125733 v0 v1 v3 v4 v5 v6 v7 v8 v9 v10 v11
+du_'46'extendedlambda_125733 ::
   MAlonzo.Code.Ledger.Core.Specification.Crypto.T_CryptoStructure_140 ->
   MAlonzo.Code.Ledger.Core.Specification.Epoch.T_EpochStructure_22 ->
   MAlonzo.Code.Class.DecEq.Core.T_DecEq_10 ->
   [AgdaAny] ->
   [MAlonzo.Code.Ledger.Core.Specification.Address.T_Credential_20] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  T_NativeScript_336 ->
+  T_NativeScript_338 ->
   Integer ->
-  T_NativeScript_336 ->
-  [T_NativeScript_336] ->
+  T_NativeScript_338 ->
+  [T_NativeScript_338] ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20 ->
   MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20
-du_'46'extendedlambda_125729 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10
+du_'46'extendedlambda_125733 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10
   = case coe v10 of
       MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v11 v12
         -> if coe v11
@@ -1225,7 +1225,7 @@ du_'46'extendedlambda_125729 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10
                               MAlonzo.Code.Qstdlib.Data.List.Relation.Unary.MOf.du_uncons_116
                               (coe v9))
                            (coe
-                              du_MOf'45'go'63'_452 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
+                              du_MOf'45'go'63'_454 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
                               (coe v5) (coe v6) (coe v7) (coe v9))
                     _ -> MAlonzo.RTE.mazUnreachableError
              else coe
@@ -1236,7 +1236,7 @@ du_'46'extendedlambda_125729 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10
                        (coe
                           MAlonzo.Code.Qstdlib.Data.List.Relation.Unary.MOf.du_unskip_138)
                        (coe
-                          du_MOf'45'go'63'_452 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
+                          du_MOf'45'go'63'_454 (coe v0) (coe v1) (coe v2) (coe v3) (coe v4)
                           (coe v5) (coe v6) (coe addInt (coe (1 :: Integer)) (coe v7))
                           (coe v9)))
       _ -> MAlonzo.RTE.mazUnreachableError

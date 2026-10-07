@@ -53,13 +53,13 @@ d__'8866'_'8640''10631'_'44'BBODY'10632'__2696 a0 a1 a2 a3 a4 a5
 -- Ledger.Dijkstra.Specification.BlockBody.Properties.Computational._.BBodyEnv
 d_BBodyEnv_2700 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   ()
 d_BBodyEnv_2700 = erased
 -- Ledger.Dijkstra.Specification.BlockBody.Properties.Computational._.BBodyState
 d_BBodyState_2702 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   ()
 d_BBodyState_2702 = erased
 -- Ledger.Dijkstra.Specification.BlockBody.Properties.Computational._.Block
@@ -109,7 +109,7 @@ d_'8801''45'bBodySize_2752 = erased
 -- Ledger.Dijkstra.Specification.BlockBody.Properties.Computational._.Computational-LEDGER
 d_Computational'45'LEDGER_2842 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_Computational_232
 d_Computational'45'LEDGER_2842 v0 v1
   = coe
@@ -138,7 +138,7 @@ d_computeProof_3138 v0
 -- Ledger.Dijkstra.Specification.BlockBody.Properties.Computational.BBODY-computeProof
 d_BBODY'45'computeProof_3158 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.BlockBody.T_Block_3070 ->
@@ -169,7 +169,7 @@ d_BBODY'45'computeProof_3158 v0 v1 v2 v3 v4
                                     MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.d_scriptStructure_2244
                                     (coe v0))))
                            (coe
-                              MAlonzo.Code.Ledger.Dijkstra.Specification.Utxo.du_totExUnitsBatch_3252
+                              MAlonzo.Code.Ledger.Dijkstra.Specification.Utxo.du_totExUnitsBatch_3260
                               (coe v0))
                            (MAlonzo.Code.Ledger.Dijkstra.Specification.BlockBody.d_ts_3086
                               (coe v4)))) in
@@ -614,7 +614,7 @@ d_BBODY'45'computeProof_3158 v0 v1 v2 v3 v4
                                                       MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.d_scriptStructure_2244
                                                       (coe v0))))
                                              (coe
-                                                MAlonzo.Code.Ledger.Dijkstra.Specification.Utxo.du_totExUnitsBatch_3252
+                                                MAlonzo.Code.Ledger.Dijkstra.Specification.Utxo.du_totExUnitsBatch_3260
                                                 (coe v0))
                                              (MAlonzo.Code.Ledger.Dijkstra.Specification.BlockBody.d_ts_3086
                                                 (coe v4))))
@@ -642,7 +642,7 @@ d_BBODY'45'computeProof_3158 v0 v1 v2 v3 v4
 -- Ledger.Dijkstra.Specification.BlockBody.Properties.Computational.BBODY-completeness
 d_BBODY'45'completeness_3202 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.BlockBody.T_Block_3070 ->
@@ -653,7 +653,7 @@ d_BBODY'45'completeness_3202 = erased
 -- Ledger.Dijkstra.Specification.BlockBody.Properties.Computational.Computational-BBODY
 d_Computational'45'BBODY_3260 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_Computational_232
 d_Computational'45'BBODY_3260 v0 v1
   = coe

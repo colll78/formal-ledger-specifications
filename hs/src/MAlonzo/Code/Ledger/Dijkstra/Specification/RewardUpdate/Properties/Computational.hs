@@ -69,7 +69,7 @@ d_computeProof_3000 v0
 -- Ledger.Dijkstra.Specification.RewardUpdate.Properties.Computational.Computational-RUPD
 d_Computational'45'RUPD_3012 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_Computational_232
 d_Computational'45'RUPD_3012 v0 ~v1
   = du_Computational'45'RUPD_3012 v0
@@ -169,7 +169,7 @@ du_Computational'45'RUPD_3012 v0
 -- Ledger.Dijkstra.Specification.RewardUpdate.Properties.Computational.Computational-TICK
 d_Computational'45'TICK_3092 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_Computational_232
 d_Computational'45'TICK_3092 v0 ~v1
   = du_Computational'45'TICK_3092 v0

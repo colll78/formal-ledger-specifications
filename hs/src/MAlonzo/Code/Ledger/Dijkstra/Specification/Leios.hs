@@ -869,19 +869,83 @@ d_selectCommittee_1616 v0 v1 v2 v3 v4
       (coe
          MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosCommitteeSize_432
          (coe v1))
-      (coe du_sortedLeiosSeats_1646 (coe v0) (coe v2) (coe v3) (coe v4))
+      (coe du_sortedLeiosSeats_1650 (coe v0) (coe v2) (coe v3) (coe v4))
+-- Ledger.Dijkstra.Specification.Leios._._._.registeredStake
+d_registeredStake_1628 ::
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.T_PParams_314 ->
+  AgdaAny ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_registeredStake_1628 v0 ~v1 ~v2 v3 v4
+  = du_registeredStake_1628 v0 v3 v4
+du_registeredStake_1628 ::
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+du_registeredStake_1628 v0 v1 v2
+  = coe
+      MAlonzo.Code.Axiom.Set.Map.du__'8746''737'__1042
+      (coe
+         MAlonzo.Code.Axiom.Set.d_th_1516
+         (coe
+            MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8))
+      (coe
+         MAlonzo.Code.Axiom.Set.d_'8712''45'sp_1648
+         MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8
+         erased
+         (MAlonzo.Code.Ledger.Core.Specification.Crypto.d_DecEq'45'THash_26
+            (coe
+               MAlonzo.Code.Ledger.Core.Specification.Crypto.d_khs_220
+               (coe
+                  MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.d_cryptoStructure_740
+                  (coe v0)))))
+      (coe
+         MAlonzo.Code.Axiom.Set.Map.du__'8739'__1626
+         (coe
+            MAlonzo.Code.Axiom.Set.d_th_1516
+            (coe
+               MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8))
+         (coe
+            MAlonzo.Code.Axiom.Set.d_'8712''45'sp_1648
+            MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8
+            erased
+            (MAlonzo.Code.Ledger.Core.Specification.Crypto.d_DecEq'45'THash_26
+               (coe
+                  MAlonzo.Code.Ledger.Core.Specification.Crypto.d_khs_220
+                  (coe
+                     MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.d_cryptoStructure_740
+                     (coe v0)))))
+         (coe v1)
+         (coe
+            MAlonzo.Code.Class.IsSet.du_dom_586
+            (coe
+               MAlonzo.Code.Axiom.Set.d_th_1516
+               (coe
+                  MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8))
+            (coe MAlonzo.Code.Class.IsSet.du_IsSet'45'Map_594) (coe v2)))
+      (coe
+         MAlonzo.Code.Axiom.Set.Map.du_mapValues_976
+         (coe
+            MAlonzo.Code.Axiom.Set.d_th_1516
+            (coe
+               MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8))
+         (coe (\ v3 -> 0 :: Integer)) (coe v2))
 -- Ledger.Dijkstra.Specification.Leios._._._.totalStake
-d_totalStake_1628 ::
+d_totalStake_1632 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.T_PParams_314 ->
   AgdaAny ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 -> Integer
-d_totalStake_1628 v0 ~v1 ~v2 v3 ~v4 = du_totalStake_1628 v0 v3
-du_totalStake_1628 ::
+d_totalStake_1632 v0 ~v1 ~v2 v3 v4 = du_totalStake_1632 v0 v3 v4
+du_totalStake_1632 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 -> Integer
-du_totalStake_1628 v0 v1
+du_totalStake_1632 v0 v1 v2
   = coe
       MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.du_indexedSum'7515'''_1446
       (coe
@@ -898,21 +962,23 @@ du_totalStake_1628 v0 v1
          MAlonzo.Code.Class.CommutativeMonoid.Core.du_fromBundle_64
          (coe
             MAlonzo.Code.Data.Nat.Properties.d_'43''45'0'45'commutativeMonoid_3476))
-      (coe (\ v2 -> v2)) (coe v1)
+      (coe (\ v3 -> v3))
+      (coe du_registeredStake_1628 (coe v0) (coe v1) (coe v2))
 -- Ledger.Dijkstra.Specification.Leios._._._.poolDistr
-d_poolDistr_1632 ::
+d_poolDistr_1636 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.T_PParams_314 ->
   AgdaAny ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_poolDistr_1632 v0 ~v1 ~v2 v3 ~v4 = du_poolDistr_1632 v0 v3
-du_poolDistr_1632 ::
+d_poolDistr_1636 v0 ~v1 ~v2 v3 v4 = du_poolDistr_1636 v0 v3 v4
+du_poolDistr_1636 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-du_poolDistr_1632 v0 v1
+du_poolDistr_1636 v0 v1 v2
   = coe
       MAlonzo.Code.Axiom.Set.Map.du_mapValues_976
       (coe
@@ -920,27 +986,27 @@ du_poolDistr_1632 v0 v1
          (coe
             MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8))
       (coe
-         (\ v2 ->
+         (\ v3 ->
             MAlonzo.Code.Ledger.Prelude.Numeric.UnitInterval.d_clamp_118
               (coe
-                 MAlonzo.Code.Ledger.Prelude.d__'47''8320'__26 (coe v2)
-                 (coe du_totalStake_1628 (coe v0) (coe v1)))))
-      (coe v1)
+                 MAlonzo.Code.Ledger.Prelude.d__'47''8320'__26 (coe v3)
+                 (coe du_totalStake_1632 (coe v0) (coe v1) (coe v2)))))
+      (coe du_registeredStake_1628 (coe v0) (coe v1) (coe v2))
 -- Ledger.Dijkstra.Specification.Leios._._._.allLeiosSeats
-d_allLeiosSeats_1636 ::
+d_allLeiosSeats_1640 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.T_PParams_314 ->
   AgdaAny ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 -> [T_LeiosSeat_1472]
-d_allLeiosSeats_1636 v0 ~v1 v2 v3 v4
-  = du_allLeiosSeats_1636 v0 v2 v3 v4
-du_allLeiosSeats_1636 ::
+d_allLeiosSeats_1640 v0 ~v1 v2 v3 v4
+  = du_allLeiosSeats_1640 v0 v2 v3 v4
+du_allLeiosSeats_1640 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   AgdaAny ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 -> [T_LeiosSeat_1472]
-du_allLeiosSeats_1636 v0 v1 v2 v3
+du_allLeiosSeats_1640 v0 v1 v2 v3
   = coe
       MAlonzo.Code.Class.Functor.Core.du_fmap_22
       MAlonzo.Code.Class.Functor.Instances.d_Functor'45'List_92 () erased
@@ -999,34 +1065,34 @@ du_allLeiosSeats_1636 v0 v1 v2 v3
                        (\ v5 -> coe MAlonzo.Code.Agda.Builtin.Maybe.C_nothing_18))))))
       (coe
          MAlonzo.Code.Axiom.Set.Map.du__'738'_570
-         (coe du_poolDistr_1632 (coe v0) (coe v2)))
+         (coe du_poolDistr_1636 (coe v0) (coe v2) (coe v3)))
 -- Ledger.Dijkstra.Specification.Leios._._._.sortedLeiosSeats
-d_sortedLeiosSeats_1646 ::
+d_sortedLeiosSeats_1650 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.T_PParams_314 ->
   AgdaAny ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 -> [T_LeiosSeat_1472]
-d_sortedLeiosSeats_1646 v0 ~v1 v2 v3 v4
-  = du_sortedLeiosSeats_1646 v0 v2 v3 v4
-du_sortedLeiosSeats_1646 ::
+d_sortedLeiosSeats_1650 v0 ~v1 v2 v3 v4
+  = du_sortedLeiosSeats_1650 v0 v2 v3 v4
+du_sortedLeiosSeats_1650 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   AgdaAny ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 -> [T_LeiosSeat_1472]
-du_sortedLeiosSeats_1646 v0 v1 v2 v3
+du_sortedLeiosSeats_1650 v0 v1 v2 v3
   = coe
       MAlonzo.Code.Data.List.Sort.Base.d_sort_248
       (coe
          MAlonzo.Code.Data.List.Sort.du_sortingAlgorithm_138
          (coe d_'8828''45'DTO_1518 (coe v0)))
-      (coe du_allLeiosSeats_1636 (coe v0) (coe v1) (coe v2) (coe v3))
+      (coe du_allLeiosSeats_1640 (coe v0) (coe v1) (coe v2) (coe v3))
 -- Ledger.Dijkstra.Specification.Leios._._.certificationDelay
-d_certificationDelay_1648 ::
+d_certificationDelay_1652 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.T_PParams_314 ->
   AgdaAny
-d_certificationDelay_1648 v0 v1
+d_certificationDelay_1652 v0 v1
   = coe
       MAlonzo.Code.Ledger.Core.Specification.Epoch.d_slotsFromDuration_100
       (MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.d_epochStructure_836
@@ -1046,28 +1112,28 @@ d_certificationDelay_1648 v0 v1
                MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosHeaderPeriod_422
                (coe v1))))
 -- Ledger.Dijkstra.Specification.Leios.EBCert
-d_EBCert_1650 a0 = ()
-data T_EBCert_1650 = C_constructor_1660 [Integer] AgdaAny
+d_EBCert_1654 a0 = ()
+data T_EBCert_1654 = C_constructor_1664 [Integer] AgdaAny
 -- Ledger.Dijkstra.Specification.Leios.EBCert.signers
-d_signers_1656 :: T_EBCert_1650 -> [Integer]
-d_signers_1656 v0
+d_signers_1660 :: T_EBCert_1654 -> [Integer]
+d_signers_1660 v0
   = case coe v0 of
-      C_constructor_1660 v1 v2 -> coe v1
+      C_constructor_1664 v1 v2 -> coe v1
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Leios.EBCert.sig
-d_sig_1658 :: T_EBCert_1650 -> AgdaAny
-d_sig_1658 v0
+d_sig_1662 :: T_EBCert_1654 -> AgdaAny
+d_sig_1662 v0
   = case coe v0 of
-      C_constructor_1660 v1 v2 -> coe v2
+      C_constructor_1664 v1 v2 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Leios.HasCast-EBCert
-d_HasCast'45'EBCert_1662 ::
+d_HasCast'45'EBCert_1666 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   MAlonzo.Code.QstdlibZ45Zclasses.Class.HasCast.Base.T_HasCast_16
-d_HasCast'45'EBCert_1662 ~v0 = du_HasCast'45'EBCert_1662
-du_HasCast'45'EBCert_1662 ::
+d_HasCast'45'EBCert_1666 ~v0 = du_HasCast'45'EBCert_1666
+du_HasCast'45'EBCert_1666 ::
   MAlonzo.Code.QstdlibZ45Zclasses.Class.HasCast.Base.T_HasCast_16
-du_HasCast'45'EBCert_1662
+du_HasCast'45'EBCert_1666
   = coe
       MAlonzo.Code.QstdlibZ45Zclasses.Class.HasCast.Base.C_constructor_30
       (coe
@@ -1093,7 +1159,7 @@ du_HasCast'45'EBCert_1662
                            MAlonzo.Code.Agda.Builtin.Reflection.C_def_184
                            (coe
                               (MAlonzo.RTE.QName
-                                 (1650 :: Integer) (7543865900978448762 :: Integer)
+                                 (1654 :: Integer) (7543865900978448762 :: Integer)
                                  "Ledger.Dijkstra.Specification.Leios.EBCert"
                                  (MAlonzo.RTE.Fixity MAlonzo.RTE.NonAssoc MAlonzo.RTE.Unrelated)))
                            (coe MAlonzo.Code.Agda.Builtin.List.C_'91''93'_16)))
@@ -1148,7 +1214,7 @@ du_HasCast'45'EBCert_1662
                               MAlonzo.Code.Agda.Builtin.Reflection.C_def_184
                               (coe
                                  (MAlonzo.RTE.QName
-                                    (1650 :: Integer) (7543865900978448762 :: Integer)
+                                    (1654 :: Integer) (7543865900978448762 :: Integer)
                                     "Ledger.Dijkstra.Specification.Leios.EBCert"
                                     (MAlonzo.RTE.Fixity
                                        MAlonzo.RTE.NonAssoc MAlonzo.RTE.Unrelated)))
@@ -1165,15 +1231,15 @@ du_HasCast'45'EBCert_1662
                                        MAlonzo.RTE.NonAssoc MAlonzo.RTE.Unrelated)))
                               (coe MAlonzo.Code.Agda.Builtin.List.C_'91''93'_16)))))
                   (coe MAlonzo.Code.Agda.Builtin.List.C_'91''93'_16))))
-         (coe C_constructor_1660))
+         (coe C_constructor_1664))
 -- Ledger.Dijkstra.Specification.Leios.signersSeats
-d_signersSeats_1664 ::
+d_signersSeats_1668 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   [T_LeiosSeat_1472] -> [Integer] -> [T_LeiosSeat_1472]
-d_signersSeats_1664 ~v0 v1 v2 = du_signersSeats_1664 v1 v2
-du_signersSeats_1664 ::
+d_signersSeats_1668 ~v0 v1 v2 = du_signersSeats_1668 v1 v2
+du_signersSeats_1668 ::
   [T_LeiosSeat_1472] -> [Integer] -> [T_LeiosSeat_1472]
-du_signersSeats_1664 v0 v1
+du_signersSeats_1668 v0 v1
   = coe
       MAlonzo.Code.Class.Functor.Core.du_fmap_22
       MAlonzo.Code.Class.Functor.Instances.d_Functor'45'List_92 () erased
@@ -1198,53 +1264,53 @@ du_signersSeats_1664 v0 v1
                (coe MAlonzo.Code.Data.List.Base.du_length_268 v0))
             v0))
 -- Ledger.Dijkstra.Specification.Leios.ValidEBCert
-d_ValidEBCert_1682 a0 a1 a2 a3 a4 = ()
-data T_ValidEBCert_1682
-  = C_constructor_1720 (Integer ->
+d_ValidEBCert_1686 a0 a1 a2 a3 a4 = ()
+data T_ValidEBCert_1686
+  = C_constructor_1724 (Integer ->
                         MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34 ->
                         MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34)
                        MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44 AgdaAny
                        MAlonzo.Code.Data.Rational.Base.T__'8804'__54
 -- Ledger.Dijkstra.Specification.Leios.ValidEBCert.seats
-d_seats_1706 ::
+d_seats_1710 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Gov.Base.T_GovStructure_10 ->
   [T_LeiosSeat_1472] ->
   MAlonzo.Code.Data.Refinement.Base.T_Refinement_28 ->
   AgdaAny ->
-  T_EBCert_1650 -> T_ValidEBCert_1682 -> [T_LeiosSeat_1472]
-d_seats_1706 ~v0 v1 ~v2 ~v3 v4 ~v5 = du_seats_1706 v1 v4
-du_seats_1706 ::
-  [T_LeiosSeat_1472] -> T_EBCert_1650 -> [T_LeiosSeat_1472]
-du_seats_1706 v0 v1
-  = coe du_signersSeats_1664 (coe v0) (coe d_signers_1656 (coe v1))
+  T_EBCert_1654 -> T_ValidEBCert_1686 -> [T_LeiosSeat_1472]
+d_seats_1710 ~v0 v1 ~v2 ~v3 v4 ~v5 = du_seats_1710 v1 v4
+du_seats_1710 ::
+  [T_LeiosSeat_1472] -> T_EBCert_1654 -> [T_LeiosSeat_1472]
+du_seats_1710 v0 v1
+  = coe du_signersSeats_1668 (coe v0) (coe d_signers_1660 (coe v1))
 -- Ledger.Dijkstra.Specification.Leios.ValidEBCert.signersSeated
-d_signersSeated_1708 ::
-  T_ValidEBCert_1682 ->
+d_signersSeated_1712 ::
+  T_ValidEBCert_1686 ->
   Integer ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34 ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
-d_signersSeated_1708 v0
+d_signersSeated_1712 v0
   = case coe v0 of
-      C_constructor_1720 v1 v2 v3 v4 -> coe v1
+      C_constructor_1724 v1 v2 v3 v4 -> coe v1
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Leios.ValidEBCert.signersKeyed
-d_signersKeyed_1712 ::
-  T_ValidEBCert_1682 ->
+d_signersKeyed_1716 ::
+  T_ValidEBCert_1686 ->
   MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44
-d_signersKeyed_1712 v0
+d_signersKeyed_1716 v0
   = case coe v0 of
-      C_constructor_1720 v1 v2 v3 v4 -> coe v2
+      C_constructor_1724 v1 v2 v3 v4 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Leios.ValidEBCert.validSignature
-d_validSignature_1714 :: T_ValidEBCert_1682 -> AgdaAny
-d_validSignature_1714 v0
+d_validSignature_1718 :: T_ValidEBCert_1686 -> AgdaAny
+d_validSignature_1718 v0
   = case coe v0 of
-      C_constructor_1720 v1 v2 v3 v4 -> coe v3
+      C_constructor_1724 v1 v2 v3 v4 -> coe v3
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Dijkstra.Specification.Leios.ValidEBCert.quorum
-d_quorum_1718 ::
-  T_ValidEBCert_1682 -> MAlonzo.Code.Data.Rational.Base.T__'8804'__54
-d_quorum_1718 v0
+d_quorum_1722 ::
+  T_ValidEBCert_1686 -> MAlonzo.Code.Data.Rational.Base.T__'8804'__54
+d_quorum_1722 v0
   = case coe v0 of
-      C_constructor_1720 v1 v2 v3 v4 -> coe v4
+      C_constructor_1724 v1 v2 v3 v4 -> coe v4
       _ -> MAlonzo.RTE.mazUnreachableError

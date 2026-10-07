@@ -507,8 +507,323 @@ d_Computational'45'ENACT_1444 v0
                                      MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_gid_1330
                                      (coe v1)))
                                (coe
-                                  MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
-                                  (coe v2))
+                                  MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32
+                                  (coe
+                                     MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.C_constructor_498
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_maxBlockSize_406
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_maxTxSize_408
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_maxHeaderSize_410
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_maxTxExUnits_412
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_maxBlockExUnits_414
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_maxValSize_416
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_maxCollateralInputs_418
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe v5)
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosHeaderPeriod_422
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosVotingPeriod_424
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosDiffusionPeriod_426
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosMaxEBSize_428
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosMaxEBTxsSize_430
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosCommitteeSize_432
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosQuorumStakeThreshold_434
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosMaxEBExUnits_436
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_leiosMaxRefScriptSizePerEB_438
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_a_440
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_b_442
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_keyDeposit_444
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_poolDeposit_446
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_minPoolCost_448
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_monetaryExpansion_450
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_treasuryCut_452
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_coinsPerUTxOByte_454
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_prices_456
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_minFeeRefScriptCoinsPerByte_458
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_maxRefScriptSizePerTx_460
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_maxRefScriptSizePerBlock_462
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_refScriptCostStride_464
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_refScriptCostMultiplier_466
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_minUTxOValue_468
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_Emax_470
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_nopt_472
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_a0_474
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_collateralPercentage_476
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_costmdlsAssoc_478
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_poolThresholds_480
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_drepThresholds_482
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_ccMinSize_484
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_ccMaxTermLength_486
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_govActionLifetime_488
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_govActionDeposit_490
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_drepDeposit_492
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2))))
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.PParams.d_drepActivity_494
+                                        (coe
+                                           MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                           (coe
+                                              MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                              (coe v2)))))
+                                  (coe
+                                     MAlonzo.Code.Agda.Builtin.Sigma.d_snd_30
+                                     (coe
+                                        MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_pparams_1356
+                                        (coe v2))))
                                (coe
                                   MAlonzo.Code.Ledger.Dijkstra.Specification.Enact.d_withdrawals_1358
                                   (coe v2)))

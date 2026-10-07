@@ -51,7 +51,7 @@ d_govSt_2820 v0
 -- Ledger.Dijkstra.Specification.Rewards.Properties.Computational._.LedgerState.utxoSt
 d_utxoSt_2822 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Ledger.T_LedgerState_3974 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Utxo.T_UTxOState_3324
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Utxo.T_UTxOState_3332
 d_utxoSt_2822 v0
   = coe
       MAlonzo.Code.Ledger.Dijkstra.Specification.Ledger.d_utxoSt_3982
@@ -116,7 +116,7 @@ d_computeProof_2956 v0
 -- Ledger.Dijkstra.Specification.Rewards.Properties.Computational._._.SNAP-total
 d_SNAP'45'total_2982 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.Rewards.T_Snapshots_4008 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.Ledger.T_LedgerState_3974 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
@@ -173,7 +173,7 @@ du_SNAP'45'total_2982 v0 v1 v2
 -- Ledger.Dijkstra.Specification.Rewards.Properties.Computational._._.SNAP-complete
 d_SNAP'45'complete_2986 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.Rewards.T_Snapshots_4008 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.Ledger.T_LedgerState_3974 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.Rewards.T_Snapshots_4008 ->
@@ -183,7 +183,7 @@ d_SNAP'45'complete_2986 = erased
 -- Ledger.Dijkstra.Specification.Rewards.Properties.Computational._.SNAP-deterministic-≡
 d_SNAP'45'deterministic'45''8801'_2998 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.Rewards.T_Snapshots_4008 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.Ledger.T_LedgerState_3974 ->
   MAlonzo.Code.Ledger.Dijkstra.Specification.Ledger.T_LedgerState_3974 ->
@@ -197,7 +197,7 @@ d_SNAP'45'deterministic'45''8801'_2998 = erased
 -- Ledger.Dijkstra.Specification.Rewards.Properties.Computational.Computational-SNAP
 d_Computational'45'SNAP_3000 ::
   MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.T_TransactionStructure_60 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3290 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Abstract.T_AbstractFunctions_3286 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_Computational_232
 d_Computational'45'SNAP_3000 v0 ~v1
   = du_Computational'45'SNAP_3000 v0

@@ -97,7 +97,7 @@ d_HasCast'45'EBCert_16 ::
   MAlonzo.Code.QstdlibZ45Zclasses.Class.HasCast.Base.T_HasCast_16
 d_HasCast'45'EBCert_16
   = coe
-      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.du_HasCast'45'EBCert_1666
+      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.du_HasCast'45'EBCert_1664
 -- Ledger.Dijkstra.Foreign.NewEpoch._.HasCast-LeiosSeat
 d_HasCast'45'LeiosSeat_18 ::
   MAlonzo.Code.QstdlibZ45Zclasses.Class.HasCast.Base.T_HasCast_16
@@ -117,7 +117,7 @@ d_certificationDelay_30 ::
   Integer
 d_certificationDelay_30
   = coe
-      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_certificationDelay_1652
+      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_certificationDelay_1650
       (coe
          MAlonzo.Code.Ledger.Dijkstra.Specification.Transaction.d_govStructure_2902
          (coe
@@ -171,22 +171,22 @@ d_signersSeats_38 ::
   [MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_LeiosSeat_1472]
 d_signersSeats_38
   = coe
-      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.du_signersSeats_1668
+      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.du_signersSeats_1666
 -- Ledger.Dijkstra.Foreign.NewEpoch._.EBCert.sig
 d_sig_42 ::
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_EBCert_1654 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_EBCert_1652 ->
   Integer
 d_sig_42 v0
   = coe
-      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_sig_1662
+      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_sig_1660
       (coe v0)
 -- Ledger.Dijkstra.Foreign.NewEpoch._.EBCert.signers
 d_signers_44 ::
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_EBCert_1654 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_EBCert_1652 ->
   [Integer]
 d_signers_44 v0
   = coe
-      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_signers_1660
+      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_signers_1658
       (coe v0)
 -- Ledger.Dijkstra.Foreign.NewEpoch._.LeiosSeat.key
 d_key_48 ::
@@ -214,45 +214,45 @@ d_weight_52 v0
       (coe v0)
 -- Ledger.Dijkstra.Foreign.NewEpoch._.ValidEBCert.quorum
 d_quorum_56 ::
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1686 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1684 ->
   MAlonzo.Code.Data.Rational.Base.T__'8804'__54
 d_quorum_56 v0
   = coe
-      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_quorum_1722
+      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_quorum_1720
       (coe v0)
 -- Ledger.Dijkstra.Foreign.NewEpoch._.ValidEBCert.seats
 d_seats_58 ::
   [MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_LeiosSeat_1472] ->
   MAlonzo.Code.Data.Refinement.Base.T_Refinement_28 ->
   Integer ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_EBCert_1654 ->
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1686 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_EBCert_1652 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1684 ->
   [MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_LeiosSeat_1472]
 d_seats_58 v0 v1 v2 v3 v4
   = coe
-      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.du_seats_1710 v0
+      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.du_seats_1708 v0
       v3
 -- Ledger.Dijkstra.Foreign.NewEpoch._.ValidEBCert.signersKeyed
 d_signersKeyed_60 ::
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1686 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1684 ->
   MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44
 d_signersKeyed_60 v0
   = coe
-      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_signersKeyed_1716
+      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_signersKeyed_1714
       (coe v0)
 -- Ledger.Dijkstra.Foreign.NewEpoch._.ValidEBCert.signersSeated
 d_signersSeated_62 ::
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1686 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1684 ->
   Integer ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34 ->
   MAlonzo.Code.Data.List.Relation.Unary.Any.T_Any_34
 d_signersSeated_62 v0
   = coe
-      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_signersSeated_1712
+      MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.d_signersSeated_1710
       (coe v0)
 -- Ledger.Dijkstra.Foreign.NewEpoch._.ValidEBCert.validSignature
 d_validSignature_64 ::
-  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1686 ->
+  MAlonzo.Code.Ledger.Dijkstra.Specification.Leios.T_ValidEBCert_1684 ->
   MAlonzo.Code.Agda.Builtin.Equality.T__'8801'__12
 d_validSignature_64 = erased
 -- Ledger.Dijkstra.Foreign.NewEpoch._._⊢_⇀⦇_,EPOCH⦈_

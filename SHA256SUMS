@@ -554,7 +554,7 @@ f2826974e6454787c1edc83f7ce3521cfb22348b763ce0dc6b3732712c5d4348  hs/src/MAlonzo
 780f5c253b81db7fde9de5b48954f431288412e8fea0e55aca47d782b09ded16  hs/src/MAlonzo/Code/Ledger/Dijkstra/Foreign/Gov.hs
 1b48c884b36873414b104d898bb44d7cc191800ce67c81baf62fc1f54f9495e5  hs/src/MAlonzo/Code/Ledger/Dijkstra/Foreign/HSStructures.hs
 90e36ae8adbf0e735f9e498fddb984c9aeae8cf0463047103d48f49c5f8f87b3  hs/src/MAlonzo/Code/Ledger/Dijkstra/Foreign/Ledger.hs
-1a0399a907e3af4cde825bdc9c8c9c13e17dac45ea5fe5833a4c5c27434b1e97  hs/src/MAlonzo/Code/Ledger/Dijkstra/Foreign/NewEpoch.hs
+3c6ad609cb3bba0ee30cfea5282e1c03b8c5f345f8fb6d39621b25f181ef404f  hs/src/MAlonzo/Code/Ledger/Dijkstra/Foreign/NewEpoch.hs
 9a80d879ecfb82acb8eab5a4a2de54b7fcd2d2868ac88843ff0e134aff2c905b  hs/src/MAlonzo/Code/Ledger/Dijkstra/Foreign/PParams.hs
 43322ad1d4e26d54e63276c1cf92adc144b13ba45670b9541800f0f833c0430d  hs/src/MAlonzo/Code/Ledger/Dijkstra/Foreign/Ratify.hs
 14eda0af7f48f9e4b1d02ecc47c4d5b417c0c90f5e091d88ae5c850ddb548a72  hs/src/MAlonzo/Code/Ledger/Dijkstra/Foreign/Receiving.hs
@@ -588,7 +588,7 @@ d4dd0dbac223f41bb4630af5075c6db30a10da165df3815a052d6eaedf1a020b  hs/src/MAlonzo
 8ddfdbea5af07f4d3872e3f4b1504fd73024efb167c703221a14210f92e3d4f7  hs/src/MAlonzo/Code/Ledger/Dijkstra/Specification/Ledger/Properties/Computational.hs
 58285fde30096bebe8c1e830d07cf6b3ba7b798a056315b40dec5bc5ce223e02  hs/src/MAlonzo/Code/Ledger/Dijkstra/Specification/Ledger.hs
 e8b669d88d9c19f084be322b47545197b5323150cde7d1721614fd7297f5c5c6  hs/src/MAlonzo/Code/Ledger/Dijkstra/Specification/Leios/Types.hs
-443a16a9ab27941bf5bf0b02685478869c6a3e213f69cc0568e19cc46ae5971d  hs/src/MAlonzo/Code/Ledger/Dijkstra/Specification/Leios.hs
+3c8a79068a4fc1bbd6efcc456d45abda14a1c005be7117c3d827aa73fb692e05  hs/src/MAlonzo/Code/Ledger/Dijkstra/Specification/Leios.hs
 f45c614a646c5d1671b242ddb4f44b1a9fb7acf918e3c1ac105db825a474dbd3  hs/src/MAlonzo/Code/Ledger/Dijkstra/Specification/PParams.hs
 167276fe156aac67157faead7a26b544563f29892233ae5bf24cb6b8d1102112  hs/src/MAlonzo/Code/Ledger/Dijkstra/Specification/PoolReap/Properties/Computational.hs
 e36a01183bdb3f45fb6a8d1e721a4dde786d8599c8f6b4f28f0f7cffc96bd96c  hs/src/MAlonzo/Code/Ledger/Dijkstra/Specification/PoolReap.hs

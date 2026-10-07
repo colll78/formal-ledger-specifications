@@ -29,6 +29,7 @@ record AbstractFunctions : Type where
         serializedSize  : Value → MemoryEstimate
         getLanguageView : PParams → Language → LangDepView
         indexOfImp      : indexOf
+        nextOutputIndex : (Ix ⇀ TxOut) → Ix
         scriptSize      : Script → ℕ
         valContext      : TxInfo → ScriptPurpose → Data
         txRefHash       : TopLevelTx → TxRefHash

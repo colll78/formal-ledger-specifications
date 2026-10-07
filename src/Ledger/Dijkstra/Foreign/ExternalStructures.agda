@@ -3,12 +3,14 @@ open import Ledger.Core.Foreign.ExternalFunctions
 module Ledger.Dijkstra.Foreign.ExternalStructures (externalFunctions : ExternalFunctions) where
 
 open import Data.Nat.Instances using (ℕ-≤-isDecTotalOrder)
+open import Data.Nat.Properties using (≤-decTotalOrder)
 open import Relation.Binary.Bundles using (DecTotalOrder)
 open import Data.Product.Relation.Binary.Lex.NonStrict using (×-isDecTotalOrder)
 open import Data.Sum.Relation.Binary.LeftOrder using (⊎-<-isDecTotalOrder)
 open import Tactic.Derive.Show
 import Data.Fin
 import Data.List.Sort
+import Data.List
 
 open import Ledger.Prelude
 
@@ -136,6 +138,7 @@ instance
       ; indexOfGuard          =
           λ x xs → Data.Fin.toℕ <$> findIndexᵇ (_== x) xs
       }
+    ; nextOutputIndex = λ os → length (setToList (dom os))
     ; scriptSize = λ where
         (inj₁ x) → HSNativeScript.nsScriptSize x
         (inj₂ x) → HSPlutusScript.psScriptSize x

@@ -92,7 +92,7 @@ private
     txLevel : TxLevel
 
 data Tag : Type where
-  Spend Mint Cert Reward Vote Propose Guard : Tag
+  Spend Mint Cert Reward Vote Propose Guard Receive : Tag
 
 unquoteDecl DecEq-Tag = derive-DecEq ((quote Tag , DecEq-Tag) ∷ [])
 ```
@@ -260,6 +260,8 @@ Of particular note in the Dijkstra era are
         txIns                : ℙ TxIn
         referenceInputs      : ℙ TxIn
         collateralInputs     : InTopLevel txLevel (ℙ TxIn)
+        collateralReturn     : InTopLevel txLevel (Maybe TxOut)
+        totalCollateral      : InTopLevel txLevel (Maybe Coin)
         txOuts               : Ix ⇀ TxOut
         txId                 : TxId
         txCerts              : List DCert
@@ -676,8 +678,7 @@ allowed to inspect utxo for its inputs.
 
   --| Set of all scripts from a transaction
   getTxScripts : Tx txLevel → UTxO → ℙ Script
-  getTxScripts tx utxo =  scriptsOfTx tx
-                          ∪ spendScripts tx utxo
+  getTxScripts tx utxo =  spendScripts tx utxo
                           ∪ referenceScripts tx utxo
                           ∪ witnessScripts tx
 

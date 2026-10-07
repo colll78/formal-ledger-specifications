@@ -464,3 +464,29 @@ properties:
     defs: []
     issues: []
     notes: "Port of conway-epoch-expired-dreps."
+
+  - id: dijkstra-receiving-protection-preservation
+    title: "CIP-160 protection preserves output payment, stake and value"
+    era: dijkstra
+    sts: UTXO
+    module: Ledger.Dijkstra.Specification.Transaction.Properties.Protection
+    anchor: "thm:ProtectionPreservation"
+    defs: [payment-preservation, stake-preservation, value-preservation]
+    issues: []
+    notes: >
+      Address protection changes identity while preserving the output's payment
+      and staking credentials and value. Receiving creation authorization is a
+      separate UTXOW premise. Track the source proposal before release.
+
+  - id: dijkstra-receiving-output-indices
+    title: "CIP-160 Receiving preserves and distinguishes output indices"
+    era: dijkstra
+    sts: UTXOW
+    module: Ledger.Dijkstra.Specification.Script.Validation
+    anchor: "thm:ReceivingOutputIndices"
+    defs: [receiving-pointer-preserves-index, receiving-indices-distinct]
+    issues: []
+    notes: >
+      Every protected script output uses its original body-local output index.
+      Different indices have distinct Receiving pointers even for identical
+      resolved outputs; parent and child maps are resolved separately.

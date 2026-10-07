@@ -21,7 +21,7 @@ open import Ledger.Dijkstra.Specification.Certs govStructure
 open import Ledger.Dijkstra.Specification.Abstract txs
 open import Ledger.Dijkstra.Specification.Script.ScriptPurpose txs
 
-open import Data.List using (fromMaybe)
+open import Data.List using (fromMaybe; deduplicateᵇ)
 ```
 -->
 
@@ -33,6 +33,32 @@ private variable
 -->
 
 ```agda
+receivingCredentials : Tx ℓ → ℙ Credential
+receivingCredentials tx = mapPartial
+  (λ (a , _) → if isProtected a then just (payCred a) else nothing)
+  (range (TxOutsOf tx))
+
+receivingScriptHashes : Tx ℓ → ℙ ScriptHash
+receivingScriptHashes = mapPartial isScriptObj ∘ receivingCredentials
+
+receivingKeyHashes : Tx ℓ → ℙ KeyHash
+receivingKeyHashes = mapPartial isKeyHashObj ∘ receivingCredentials
+
+receivingOutputs : Tx ℓ → ℙ (Ix × TxOut)
+receivingOutputs tx = mapPartial
+  (λ entry@(_ , o) →
+    if isProtected (proj₁ o)
+    then (isScriptObj (payCred (proj₁ o)) >>= λ _ → just entry)
+    else nothing)
+  ((TxOutsOf tx) ˢ)
+
+receivingOutput : Tx ℓ → Ix → Maybe TxOut
+receivingOutput tx ix = do
+  o ← lookupᵐ? (TxOutsOf tx) ix
+  if isProtected (proj₁ o)
+    then (isScriptObj (payCred (proj₁ o)) >>= λ _ → just o)
+    else nothing
+
 rdptr : Tx ℓ → ScriptPurpose → Maybe RedeemerPtr
 rdptr tx = λ where
   ⟦ Cert          , h ⟧ˢᵖ → map (Cert           ,_) $ indexOfDCert          h (DCertsOf tx)
@@ -42,6 +68,28 @@ rdptr tx = λ where
   ⟦ Vote          , h ⟧ˢᵖ → map (Vote           ,_) $ indexOfVote           h (map GovVote.voter (ListOfGovVotesOf tx))
   ⟦ Propose       , h ⟧ˢᵖ → map (Propose        ,_) $ indexOfProposal       h (ListOfGovProposalsOf tx)
   ⟦ Guard         , h ⟧ˢᵖ → map (Guard          ,_) $ indexOfGuard          h (setToList (GuardsOf tx))
+  ⟦ Receive       , (ix , _) ⟧ˢᵖ → (λ _ → (Receive , ix)) <$> receivingOutput tx ix
+
+```
+
+## Theorem: Receiving keeps and distinguishes output indices {#thm:ReceivingOutputIndices}
+
+Protected script outputs retain their original body-local index. In particular,
+outputs at different indices cannot share a Receiving redeemer pointer, even
+when their entire resolved outputs are identical.
+
+```agda
+receiving-pointer-preserves-index
+  : (tx : Tx ℓ) (ix : Ix) (o : TxOut)
+  → receivingOutput tx ix ≡ just o
+  → rdptr tx ⟦ Receive , (ix , o) ⟧ˢᵖ ≡ just (Receive , ix)
+receiving-pointer-preserves-index tx ix o eligible rewrite eligible = refl
+
+receiving-indices-distinct
+  : (ix ix′ : Ix) → ix ≢ ix′
+  → _≢_ {A = Maybe RedeemerPtr} (just (Receive , ix)) (just (Receive , ix′))
+receiving-indices-distinct ix ix′ different ptrs-equal =
+  different (cong (λ p → maybe proj₂ ix p) ptrs-equal)
 
 indexedRdmrs : Tx ℓ → ScriptPurpose → Maybe (Redeemer × ExUnits)
 indexedRdmrs tx sp = maybe (λ x → lookupᵐ? (RedeemersOf tx) x) nothing (rdptr tx sp)
@@ -156,6 +204,7 @@ credsNeeded utxo tx =
                                  then (λ {sh} → just (⟦ Propose , p ⟧ˢᵖ , ScriptObj sh))
                                  else nothing)                           (fromList (ListOfGovProposalsOf tx))
   ∪ mapˢ        (λ c       → (⟦ Guard , c ⟧ˢᵖ , c))                      (GuardsOf tx)
+  ∪ mapˢ        (λ entry@(_ , o) → (⟦ Receive , entry ⟧ˢᵖ , payCred (proj₁ o))) (receivingOutputs tx)
 
   where
     collateralInputs : Tx ℓ → ℙ TxIn
@@ -186,13 +235,20 @@ opaque
 The function `collectP2ScriptsWithContext`.{AgdaFunction} builds a list of
 phase-2 scripts paired with their contexts for phase-2 validation. The scripts
 that are needed for validation are retrieved from the transaction using the
-function `credsNeeded`{.AgdaFunction}.
+function `credsNeeded`{.AgdaFunction}. The collector deduplicates semantic
+`(ScriptPurpose, Credential)` identities before mapping to arguments. Proposal
+identity uses the existing semantic comparator used by proposal indexing; all
+other purposes compare their tag and payload directly. Distinct purposes remain
+distinct even when the foreign context abstraction produces equal arguments.
 
 In Dijkstra, the execution of a guard script can require several (including
 none) data. The function `assembleData` accounts for this situation by returning
 a list of lists of data (a list of data is part of the context of a script).
 
 ```agda
+  purposeCredentialEquals : ScriptPurpose × Credential → ScriptPurpose × Credential → Bool
+  purposeCredentialEquals (sp , c) (sp′ , c′) = scriptPurposeEquals sp sp′ ∧ (c == c′)
+
   collectP2ScriptsWithContext
     : PParams
     → Tx ℓ
@@ -200,7 +256,7 @@ a list of lists of data (a list of data is part of the context of a script).
     → ℙ Script
     → List (P2Script × List Data × ExUnits × CostModel)
   collectP2ScriptsWithContext pp tx utxo allScripts
-    = concat (setToList (mapˢ toScript (credsNeeded utxo tx)))
+    = concat (map toScript (deduplicateᵇ purposeCredentialEquals (setToList (credsNeeded utxo tx))))
     where
       context : ScriptPurpose → Data
       context sp = valContext (txInfoForPurpose utxo tx sp) sp

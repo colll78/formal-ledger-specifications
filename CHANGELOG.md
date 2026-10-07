@@ -4,6 +4,36 @@
 
 ### WIP
 
+- Enumerate Leios committee seats once per semantic registered pool identity,
+  including when several credentials delegate to one pool; test the composed
+  epoch transition and exact top-K seats without normalizing committee lists.
+- Retain registered zero-stake pools in Leios committee selection, assigning
+  absent delegated stake zero while preserving fractional weights, ranking and
+  pool-identity tie breaks; expose and test the extracted selection function.
+- Synchronize the stored protocol-parameter version during hard-fork enactment,
+  retaining the parameter-update chain identity; test major 12 to 13 through
+  extracted enactment and epoch transitions against complete expected states.
+- Add CIP-160 protected address identity and one body-local Receiving purpose
+  per protected script output, with the original output index and resolved output
+  in its context; enforce protected key/native/Plutus witness rules.
+- Admit protected ordinary outputs only from protocol major 12, independently
+  in parent and child bodies; mirror historical rejection in Conway conformance.
+- Preserve protection in script-context output/input representations and reject
+  older Plutus contexts that cannot represent it; Conway outputs stay unprotected.
+- Represent top-level collateral return/total collateral, reject protected
+  returns in phase 1, and retain collateral-only invalid-batch state effects.
+- Preserve identical protected Plutus outputs at different indices as separate
+  executions with distinct redeemers and budgets; never rank or group by script hash.
+- Deduplicate semantic purpose/credential identities before collecting evaluator
+  arguments, preserving distinct purposes with equal foreign contexts.
+- Check legacy protected references only where visible: V2/V3, excluding V1.
+- Instantiate foreign execution-budget ordering componentwise; limits admit
+  budgets below or equal to the maximum and reject either exceeded component.
+- Aggregate execution budgets across all bodies for transaction/block limits and
+  abstract fees. Exclude newly created output scripts from the witness pool.
+- Extract Receiving domain/pointer APIs and a child UTXOW step; prove payment, stake and value
+  preservation; record the foreign evaluator and representation premises.
+
 - Add the nine Leios protocol parameters to `PParams`, in the network and security groups, with their `PParamsUpdate` companions (CIP-164 Table 3; cardano-ledger #5965).  The committee is governed by size (`leiosCommitteeSize`), and zero-valued Leios parameters stay well-formed as the protocol's disabled state.
 - Add `LeiosCryptoStructure`, a Dijkstra-local extension of `CryptoStructure` carried by `GovStructure`, with the abstract BLS voting primitives, the committee's key-hash order, and the Leios hash carriers; add the Leios primitive types `EndorserBlock` and `Announcement` (CIP-164).
 - Move cert-deposit helpers from `Utxo` to `Certs`.
